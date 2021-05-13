@@ -43,7 +43,7 @@ We provide very user-friendly usage. you just download codes  add your file, the
 
 
 
-![2](.\pic\2.jpg)
+![1](./pic/2.jpg)
 
 #### 3.Permance
 
@@ -51,7 +51,7 @@ The ROC curves and AUC scores of PEVI performances in each set of five-fold cros
 
 
 
-![1](./pic/1.jpg)
+![2](./pic/1.jpg)
 
 Figure1:The ROC curves and AUC scores of PEVI performances in each set of five-fold crossvalidation. (Group A refers to 100-400bp length, Group B refers to 400-800bp length, Group C refers to 800-1200bp length, Group D refers to 1200-1800bp length)
 
