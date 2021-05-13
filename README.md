@@ -43,7 +43,7 @@ We provide very user-friendly usage. you just download codes  add your file, the
 
 
 
-![2](.\pic\2.png)
+![2](.\pic\2.jpg)
 
 #### 3.Permance
 
