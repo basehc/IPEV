@@ -2,6 +2,7 @@
 
 ####  Prokaryotic and Eukaryotic virus identification in virome data based on deep learning
 
+![0](./pic/logo.png)
 #### 1.Installation
 
 #### Dependencies
