@@ -61,7 +61,7 @@ Figure1:The ROC curves and AUC scores of PEVI performances in each set of five-f
 
 
 
-**Run time** : Owing to use Google tensorflow [TFRecord](https://www.tensorflow.org/tutorials/load_data/tfrecord) file format, PEVI only spend ~40 seconds to calcuate 10,000 sequences on 32GB Nvidia graphics card GPU, 20 CPUs is a single GPU .
+**Run time** :  .
 
 
 
