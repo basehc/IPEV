@@ -7,24 +7,12 @@
 
 #### Dependencies
 
-PEVI requires:
 
-```python
-Python        =3.6.12 
-biopython     =1.78
-pandarallel   =1.5.1
-pandas        =1.1.5
-sgt           =2.0.3
-Tensorflow-gpu=2.3.1
-scikit-learn  =0.24.1
-matplotlib    =3.3.3
-numpy         =1.19.2
-```
 
 You can use (please create new environment to avoid unnecessary trouble bu using `conda create -n env_name python=3.6;         source activate my_env_name;   python3 -m venv /path/to/new/virtual/environment`): 
 
 ```python
-pip install -r requirements.txt
+python -m pip install -r requirement.txt
 ```
 
 #### 2.Usage
