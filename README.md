@@ -27,7 +27,7 @@ We provide very user-friendly usage. you just download codes  add your file, the
 
 2.python run.py 'your file'
 
-3.enjoy it !
+3.
 ```
 
 
