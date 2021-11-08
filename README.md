@@ -17,13 +17,9 @@ python -m pip install -r requirement.txt
 
 #### 2.Usage
 
-We provide very user-friendly usage. you just download codes  add your file, then enjoy it.
-
-
-
 
 ```
-1.Put *fasta or *fa file into current file path
+1.Put *fasta  file into current file path
 
 2.python run.py 'your file'
 
@@ -57,3 +53,8 @@ Figure1:The ROC curves and AUC scores of IPEV performances in each set of five-f
 #### 4.Contact
 
 If you have any questions, please don't hesitate to ask me: yinhengchuang@pku.edu.cn
+
+#### 5. License
+
+The source code of IPEV is distributed as open source under the [GNU GPL license](https://www.gnu.org/licenses/gpl-3.0.en.html), the IPEV program and all datasets  also can be freely available at http://cqb.pku.edu.cn/ZhuLab/IPEV
+
