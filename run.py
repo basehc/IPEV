@@ -303,9 +303,9 @@ try:
 	            weight += np.frombuffer(i)[2]*all_pre_store[i]
 	        score = weight/denominator
 	        if score[0]>score[1]:
-	            name = 'Prokaryotes Viruses'
+	            name = 'Prokaryotes Virus'
 	        else:
-	            name = 'Eukaryotes  Viruses'
+	            name = 'Eukaryotes  Virus'
 	        print('Seq_id:{0:^12}=====>   {1:.4f},{2:.4f}|| VirusType: {3}  '.format(np.frombuffer(sort_dict_pre[start])[0],score[0],score[1],name))
 	        f1.writelines('Seq_id:{0:^12}=====>   {1:.4f},{2:.4f}|| VirusType: {3}  \n'.format(np.frombuffer(sort_dict_pre[start])[0],score[0],score[1],name))
 	        x_.append(score[0])
