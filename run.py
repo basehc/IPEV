@@ -86,7 +86,7 @@ def sgtfunc(filename,merlen=3):
             sequence_id[0]=seq_id
             _length_sequence = len(address1)
 
-            if 100>len(address1[_length_sequence//1800*1800:]):
+            if 2>len(address1[_length_sequence//1800*1800:]):
                 sequence_id[4]=_length_sequence//1800
             else:
                 sequence_id[4]=_length_sequence//1800+1
