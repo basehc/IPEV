@@ -1,6 +1,4 @@
-# IPEV
-
-####   identification of prokaryotic and eukaryotic virus in virome data based on deep learning
+# IPEV: Identification of Prokaryotic and Eukaryotic Virus in virome data based on deep learning
 
 ![0](./pic/logo_1.png)
 
