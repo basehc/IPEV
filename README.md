@@ -1,28 +1,16 @@
 # IPEV: Identification of Prokaryotic and Eukaryotic Virus in virome data based on deep learning
 
-![0](./pic/logo_1.png)
+![0](./pic/logo_1.jpg)
 
 - [Introduction]: 
 
   
 
-- [Version](https://github.com/shufangwu/DeePhage#version)
-
-- [Requirements](https://github.com/shufangwu/DeePhage#requirements)
-
-- [Installation](https://github.com/shufangwu/DeePhage#installation)
-
-- [Usage](https://github.com/shufangwu/DeePhage#usage)
-
-- [Output](https://github.com/shufangwu/DeePhage#output)
-
-- [Citation](https://github.com/shufangwu/DeePhage#citation)
-
-- [Contact](https://github.com/shufangwu/DeePhage#contact)
+- 
 
 
 
-#### Installation
+#### [Installation](#Dependencies)
 
 #### Dependencies
 
