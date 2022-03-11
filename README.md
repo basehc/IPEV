@@ -2,15 +2,34 @@
 
 ![0](./pic/logo_1.jpg)
 
+```
+.
+├── core/
+│   ├── 1.hdf5
+│   ├── 2.hdf5
+│   ├── 3.hdf5
+│   └── 4.hdf5
+├── run.py             #main program
+└── example.fasta      #example virus sequences
+```
+
+
+
+- 
+
 - [Introduction]: 
 
   
 
-- 
+- [Dependencies]()
 
 
 
 #### [Installation](#Dependencies)
+
+[Dependencies]()
+
+[Dependencies](#Dependencies)
 
 #### Dependencies
 
