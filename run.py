@@ -14,8 +14,7 @@ start_time = time.time()
 t = time.localtime()
 current_time = time.strftime("%H_%M_%S_", t)
 try:
-    file_local_fasta=str(sys.argv[1]).split('/')[-1]
-    file_0 = str(current_time)+file_local_fasta+'_temper_file/'
+    file_0 = str(current_time)+str(sys.argv[1])+'_temper_file/'
 
     os.makedirs(file_0)
 
@@ -86,17 +85,17 @@ def sgtfunc(filename,merlen=3):
             sequence_id[0]=seq_id
             _length_sequence = len(address1)
 
-            if 2>len(address1[_length_sequence//1800*1800:]):
+            if 100>len(address1[_length_sequence//1800*1800:]):
                 sequence_id[4]=_length_sequence//1800
             else:
                 sequence_id[4]=_length_sequence//1800+1
             for _num_i in range(_length_sequence//1800+1):
                 
                 sequence_id[1]=_num_i
-                if len(address1[_num_i*1800 : _num_i*1800+1800])<2:
+                if len(address1[_num_i*1800 : _num_i*1800+1800])<100:
                     pass
 
-                elif 2<=len(address1[_num_i*1800 : _num_i*1800+1800])<400:
+                elif 100<=len(address1[_num_i*1800 : _num_i*1800+1800])<400:
                     count_1+=1
                     sequence_id[2]=len(address1[_num_i*1800 : _num_i*1800+1800])
                     sequence_id[3]=1
@@ -287,33 +286,37 @@ all_count = count_1+count_2+count_3+count_4
 start = 0 
 x_ = []
 try:
-	with open(file_0+'log','w+') as f1:
+    with open(file_0+'log','w+') as f1:
+        f1.writelines('++++++++++++++++++++++++++++++PEVI++++++++++++++++++++++++++++++\n')
 
-	    print('++++++++++++++++++++++++++++++IPEV++++++++++++++++++++++++++++++\n')
+        f1.writelines('Prokaryotes Viruses score||Eukaryotes  Viruses score \n')
+        print('++++++++++++++++++++++++++++++PEVI++++++++++++++++++++++++++++++\n')
 
-	    print('Prokaryotes Viruses score||Eukaryotes  Viruses score \n')
-	    num_seq_effective = 0
-	    while start<all_count:
-	        num_seq_effective+=1
-	        step = int(np.frombuffer(sort_dict_pre[start])[4])
-	        denominator = 0
-	        weight = 0
-	        for i in sort_dict_pre[start:start+step]:
-	            denominator += np.frombuffer(i)[2]
-	            weight += np.frombuffer(i)[2]*all_pre_store[i]
-	        score = weight/denominator
-	        if score[0]>score[1]:
-	            name = 'Prokaryotes Virus'
-	        else:
-	            name = 'Eukaryotes  Virus'
-	        print('Seq_id:{0:^12}=====>   {1:.4f},{2:.4f}|| VirusType: {3}  '.format(np.frombuffer(sort_dict_pre[start])[0],score[0],score[1],name))
-	        f1.writelines('Seq_id:{0:^12}=====>   {1:.4f},{2:.4f}|| VirusType: {3}  \n'.format(np.frombuffer(sort_dict_pre[start])[0],score[0],score[1],name))
-	        x_.append(score[0])
-	        start +=step
-	    time_run = time.time() - start_time
-	    print('Total Seq numbers are ==> {0}\n'.format(num_seq_effective))
-	    print("IPEV run time --- %s seconds ---" % (time_run))
-	plt.hist(x_)
-	plt.savefig(file_0+'Distribution_map.png')
+        print('Prokaryotes Viruses score||Eukaryotes  Viruses score \n')
+        num_seq_effective = 0
+        while start<all_count:
+            num_seq_effective+=1
+            step = int(np.frombuffer(sort_dict_pre[start])[4])
+            denominator = 0
+            weight = 0
+            for i in sort_dict_pre[start:start+step]:
+                denominator += np.frombuffer(i)[2]
+                weight += np.frombuffer(i)[2]*all_pre_store[i]
+            score = weight/denominator
+            if score[0]>score[1]:
+                name = 'Prokaryotes Viruses'
+            else:
+                name = 'Eukaryotes  Viruses'
+            print('Seq_id:{0:^12}=====>   {1:.4f},{2:.4f}|| Host: {3}  '.format(np.frombuffer(sort_dict_pre[start])[0],score[0],score[1],name))
+            f1.writelines('Seq_id:{0:^12}=====>   {1:.4f},{2:.4f}|| Host: {3}  \n'.format(np.frombuffer(sort_dict_pre[start])[0],score[0],score[1],name))
+            x_.append(score[0])
+            start +=step
+        time_run = time.time() - start_time
+        f1.writelines('Total Seq numbers are ==> {0}\n'.format(num_seq_effective))
+        print('Total Seq numbers are ==> {0}\n'.format(num_seq_effective))
+        print("PEVI run time --- %s seconds ---" % (time_run))
+        f1.writelines("PEVI run time --- %s seconds ---" % (time_run))
+    plt.hist(x_)
+    plt.savefig(file_0+'Distribution_map.png')
 except:
-	pass
+    pass
