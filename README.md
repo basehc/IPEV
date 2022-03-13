@@ -35,7 +35,7 @@ File tree:
 └── example.fasta      #example virus sequences
 ```
 
-1. You can use (please create new environment to avoid unnecessary trouble by using `conda create -n env_name python=3.6; source activate my_env_name; or python3 -m venv /path/to/new/virtual/environment`).
+1. You can use (please create new environment to avoid unnecessary trouble by using `conda create -n env_name python=3.6; source activate my_env_name; or python3 -m venv /path/to/new/virtual/environment source /path/to/new/virtual/environment//bin/activate `).
 2. Configure the operating environment `python -m pip install -r requirement.txt`  
 3. Download the program `git clone https://github.com/basehc/IPEV.git`                         
 
