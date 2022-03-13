@@ -15,21 +15,7 @@
 
 
 
-- 
 
-- [Introduction]: 
-
-  
-
-- [Dependencies]()
-
-
-
-#### [Installation](#Dependencies)
-
-[Dependencies]()
-
-[Dependencies](#Dependencies)
 
 #### Dependencies
 
@@ -56,19 +42,7 @@ python -m pip install -r requirement.txt
 
 ![1](./pic/2.jpg)
 
-#### 3.Permance
 
-The ROC curves and AUC scores of IPEV performances in each set of five-fold crossvalidation
-
-
-
-![2](./pic/1.jpg)
-
-Figure1:The ROC curves and AUC scores of IPEV performances in each set of five-fold crossvalidation. (Group A refers to 100-400bp length, Group B refers to 400-800bp length, Group C refers to 800-1200bp length, Group D refers to 1200-1800bp length)
-
-
-
-**Accuracy** :AUC of IPEV can arrive to 0.99 on 5-fold crossvalidation when length of sequence is between 1200-1800..
 
 
 
@@ -82,5 +56,5 @@ If you have any questions, please don't hesitate to ask me: yinhengchuang@pku.ed
 
 #### 5. License
 
-The source code of IPEV is distributed as open source under the [GNU GPL license](https://www.gnu.org/licenses/gpl-3.0.en.html), the IPEV program and all datasets  also can be freely available at http://cqb.pku.edu.cn/ZhuLab/IPEV
+The source code of IPEV is distributed as open source under the [GNU GPL license](https://www.gnu.org/licenses/gpl-3.0.en.html) V3, the IPEV program and all datasets  also can be freely available at http://cqb.pku.edu.cn/ZhuLab/IPEV
 
