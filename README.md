@@ -9,7 +9,7 @@
 - [Introduction](#Introduction)
 
 - [Installation](#Installation)
-- [Quick start](#Quick start)
+- [Quickstart](#Quickstart)
 - [Citation](#Citation)
 - [Contact](#Contact)
 - [License](#License)
@@ -41,7 +41,7 @@ File tree:
 
 
 
-## Quick start
+## Quickstart
 
 ```
 1.cd ./IPEV
