@@ -1,4 +1,4 @@
- ![Build](https://img.shields.io/badge/Build-passing-brightgreen) ![TensorFlow](https://img.shields.io/badge/TensorFlow-V2.3.1-brightgreen) ![license](https://img.shields.io/badge/license-GPL--v3-blue) ![GitHub all releases](https://img.shields.io/github/downloads/basehc/IPEV/total)     
+ ![Build](https://img.shields.io/badge/Build-passing-brightgreen) ![TensorFlow](https://img.shields.io/badge/TensorFlow-V2.3.1-brightgreen) ![license](https://img.shields.io/badge/license-GPL--v3-blue) 
 
 ## IPEV: Identification of Prokaryotic and Eukaryotic Virus in virome data using deep learning
 
