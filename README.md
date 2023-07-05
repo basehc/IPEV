@@ -9,12 +9,14 @@
 - [Introduction](#Introduction)
 
 - [Installation](#Installation)
+
 - [Quickstart](#Quickstart)
+
 - [Citation](#Citation)
+
 - [Contact](#Contact)
+
 - [License](#License)
-
-
 
 ## Introduction
 
@@ -36,10 +38,8 @@ File tree:
 ```
 
 1. Download the program `git clone https://github.com/basehc/IPEV.git`
-2. You can use (please create new environment to avoid unnecessary trouble by using `conda create -n env_name python=3.6; source activate my_env_name; or python3 -m venv /path/to/new/virtual/environment source /path/to/new/virtual/environment//bin/activate `).
+2. You can use (please create new environment to avoid unnecessary trouble by using `conda create -n env_name python=3.8.6; source activate my_env_name; or python3 -m venv /path/to/new/virtual/environment source /path/to/new/virtual/environment//bin/activate `).
 3. Configure the operating environment `python -m pip install -r requirements.txt`                         
-
-
 
 ## Quickstart
 
@@ -53,10 +53,6 @@ File tree:
 
 - We recommend that users put all sequences into one ‘fasta’ file as it will greatly reduce the running time.
 - The output of the screen is also stored in a ‘log’ file, meanwhile the program gives a histogram of the frequency of the scoring distribution of the sequence.
-
-
-
-
 
 ## Citation
 
