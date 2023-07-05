@@ -64,7 +64,7 @@ File tree:
 ![1](./pic/2.jpg)
 
 - We recommend that users put all sequences into one ‘fasta’ file as it will greatly reduce the running time.
-- The output of the screen is stored in a log.csv of temporary filefolder, meanwhile the program gives a histogram of the frequency of the scoring distribution of the sequences in the given file.
+- The output of the screen is stored in a log.csv of temporary filefolder, meanwhile the program gives a histogram of the frequency of the scoring distribution of the sequences in the given fasta file.
 
 ## Citation
 
