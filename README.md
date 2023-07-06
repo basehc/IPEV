@@ -57,8 +57,6 @@ File tree:
 | ------ | ----------------------- | ---------------------- | ----------- |
 | Line   | value1                  | value2                 | value3      |
 
-
-
 ## Screen output
 
 ![1](./pic/2.jpg)
@@ -72,8 +70,8 @@ File tree:
 
 ## Contact
 
-If you have any questions, please don't hesitate to ask me: yinhengchuang@pku.edu.cn
+If you have any questions, please don't hesitate to ask me: yinhengchuang@pku.edu.cn or hqzhu@pku.edu.cn
 
 ## License
 
-The source code of IPEV is distributed as open source under the [GNU GPL license V3](https://www.gnu.org/licenses/gpl-3.0.en.html) , the IPEV program and all datasets  also can be freely available at http://cqb.pku.edu.cn/ZhuLab/IPEV
+The source code of IPEV is distributed as open source under the [GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0.en.html) , the IPEV program and all datasets  also can be freely available at  [zhulab homepage](https://cqb.pku.edu.cn/zhulab/info/1006/1156.htm)
