@@ -37,11 +37,17 @@ File tree:
 └── example.fasta      #example virus sequences
 ```
 
+We provide two ways to use the IPEV tool: use image from Docker Hub or use repository from GitHub.
+
+###### How to use IPEV  from GitHub
+
+
+
 1. Download the program `git clone https://github.com/basehc/IPEV.git`
 2. You can use (please create new environment to avoid unnecessary trouble by using `conda create -n env_name python=3.8.6; source activate my_env_name;  python3 -m venv /path/to/new/virtual/environment; source /path/to/new/virtual/environment//bin/activate `).
 3. Configure the operating environment `python -m pip install -r requirements.txt`                         
 
-## Quickstart
+###### Quickstart
 
 ```
 1.cd ./IPEV
@@ -49,7 +55,23 @@ File tree:
 2.python run.py example.fasta
 ```
 
-## 
+###### How to use IPEV from  Docker Hub
+
+1. Pull the dryinhc/ipev_v1 image from Docker Hub. Open a terminal window and run the following command:
+   
+   `docker pull dryinhc/ipev_v1`
+   
+   This will download the image to your local machine.
+
+2. Run the dryinhc/ipev_v1 image. In the same terminal window, run the following command:
+   
+   `docker run -it --rm dryinhc/ipev_v1`
+   
+   This will start a container based on the image and run the IPEV tool. 
+   
+   Firstly, you need to  run `docker cp data.fasta dryinhc/ipev_v1:/app/tool/`in new terminal  , run `cd tool` in  container and `python run.py data.fasta`
+
+3.  To exit the container, press Ctrl+D or type `exit`.
 
 ## Output
 
