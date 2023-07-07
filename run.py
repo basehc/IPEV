@@ -312,7 +312,7 @@ try:
 	        start +=step
 	    time_run = time.time() - start_time
 	    print('Total Seq numbers are ==> {0}\n'.format(num_seq_effective))
-	    print("IPEV Run Time --- %s seconds ---" % (time_run))
+	    print("IPEV Run Time --- %.4f seconds ---" % (time_run))
 	plt.hist(x_)
 	plt.savefig(file_0+'Distribution_map.png')
 except:
