@@ -32,28 +32,55 @@ File tree:
 │   ├── 1.hdf5
 │   ├── 2.hdf5
 │   ├── 3.hdf5
-│   └── 4.hdf5
-├── run.py             #main program
-└── example.fasta      #example virus sequences
+│   ├── 4.hdf5
+│   └── decontamination/
+│       ├── 1.hdf5
+│       ├── 2.hdf5
+│       ├── 3.hdf5
+│       └── 4.hdf5
+├── run.py             # Main program
+└── example.fasta      # Example virus sequences
+
 ```
 
-We provide two ways to use the IPEV tool: use image from Docker Hub or use repository from GitHub.
+We provide two ways to use the IPEV tool: use repository from GitHub or use image from Docker Hub.
+
+
+
+## 
 
 ###### How to use IPEV  from GitHub
 
+- **Clone the Program**: First, clone the IPEV program repository from GitHub using the command:
+  
+  ```bash
+  git clone https://github.com/basehc/IPEV.git
+  ```
+
+- **Create a New Environment**: To avoid potential conflicts with existing packages, it's recommended to create a new environment. You can do this with Conda and virtualenv:
+  
+  - Using Conda:
+    
+    ```bash
+    conda create -n your_env_name python=3.8.6
+    conda activate your_env_name
+    ```
+  - Using virtualenv:
+    
+    ```bash
+    python3 -m venv /path/to/new/virtual/environment
+    source /path/to/new/virtual/environment/bin/activate
+    ```
+
+- **Set Up the Operating Environment**: Install the necessary dependencies by navigating to the program directory and running:
+  
+  ```bash
+  python -m pip install -r requirements.txt
+  ```
+  
+  
 
 
-1. Download the program `git clone https://github.com/basehc/IPEV.git`
-2. You can use (please create new environment to avoid unnecessary trouble by using `conda create -n env_name python=3.8.6; source activate my_env_name;  python3 -m venv /path/to/new/virtual/environment; source /path/to/new/virtual/environment//bin/activate `).
-3. Configure the operating environment `python -m pip install -r requirements.txt`                         
-
-###### Quickstart
-
-```
-1.cd ./IPEV
-
-2.python run.py example.fasta
-```
 
 ###### How to use IPEV from  Docker Hub
 
@@ -71,20 +98,39 @@ We provide two ways to use the IPEV tool: use image from Docker Hub or use repos
    
    Firstly, you need to  run `docker cp data.fasta dryinhc/ipev_v1:/app/tool/`in new terminal  , run `cd tool` in  container and `python run.py data.fasta`
 
-3.  To exit the container, press Ctrl+D or type `exit`.
+3. To exit the container, press Ctrl+D or type `exit`.
 
-## Output
+## 
 
-| Header | Prokaryotic_Virus_score | Eukaryotic_virus_score | Virus_taxon |
-| ------ | ----------------------- | ---------------------- | ----------- |
-| Line   | value1                  | value2                 | value3      |
+**Non-Virus Removal Feature in IPEV Program**:
 
-## Screen output
+The IPEV program offers a specialized function for filtering out non-viral components from virome datasets. This feature is easily accessible and can be utilized with the following command:
 
-![1](./pic/2.jpg)
+```bash
+python3 run.py example.fasta -filter yes
+```
 
-- We recommend that users put all sequences into one ‘fasta’ file as it will greatly reduce the running time.
-- The output of the screen is stored in a log.csv of temporary filefolder, meanwhile the program gives a histogram of the frequency of the scoring distribution of the sequences in the given fasta file.
+## Quickstart
+
+```
+1.cd ./IPEV
+
+2.python run.py example.fasta
+```
+
+###### Program Output and Recommendations
+
+- **Sequence Scoring File**: The final scores for the sequences will be stored in a TSV (Tab-Separated Values) file. This file is placed in a folder named with the current date and time. The TSV file includes scores for each sequence from your FASTA file, structured as follows:
+  
+  | Sequence_ID | Prokaryotic_Virus_Score | Eukaryotic_Virus_Score | Virus_Taxon |
+  | ----------- | ----------------------- | ---------------------- | ----------- |
+  | Sample_ID   | Score1                  | Score2                 | Category    |
+
+- **Histogram of Scores**: Along with the TSV file, the program creates a histogram showing how often different scores occur for the sequences in your FASTA file. This chart makes it easier to see the range and frequency of the scores.
+
+- **Efficient Running Time**: To save time, it's best to put all your sequences in one single FASTA file. This way, the program runs faster as it has fewer files to open and process.
+
+
 
 ## Citation
 
