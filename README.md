@@ -134,7 +134,7 @@ python3 run.py example.fasta -filter yes
 
 ## Citation
 
-#######
+This work has been accepted by GigaScience. DOI:https://doi.org/10.1093/gigascience/giae018
 
 ## Contact
 
