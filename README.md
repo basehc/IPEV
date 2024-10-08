@@ -5,18 +5,23 @@
   ![0](./pic/logo.png)
 
 ## Contents
-
+- [Citation](#Citation)
+- 
 - [Introduction](#Introduction)
 
 - [Installation](#Installation)
 
 - [Quickstart](#Quickstart)
 
-- [Citation](#Citation)
-
 - [Contact](#Contact)
 
 - [License](#License)
+
+## Citation
+
+Yin, Hengchuang, Shufang Wu, Jie Tan, Qian Guo, Mo Li, Jinyuan Guo, Yaqi Wang, Xiaoqing Jiang, and Huaiqiu Zhu. "IPEV: Identification of Prokaryotic and Eukaryotic Virus-Derived Sequences in Virome Using Deep Learning." GigaScience 13 (2024): giae018. https://doi.org/10.1093/gigascience/giae018.
+
+
 
 ## Introduction
 
@@ -130,11 +135,6 @@ python3 run.py example.fasta -filter yes
 
 - **Efficient Running Time**: To save time, it's best to put all your sequences in one single FASTA file. This way, the program runs faster as it has fewer files to open and process.
 
-
-
-## Citation
-
-This work has been accepted by GigaScience. DOI:https://doi.org/10.1093/gigascience/giae018
 
 ## Contact
 
