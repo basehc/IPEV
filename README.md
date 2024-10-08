@@ -19,7 +19,7 @@
 
 ## Citation
 
-Yin, Hengchuang, Shufang Wu, Jie Tan, Qian Guo, Mo Li, Jinyuan Guo, Yaqi Wang, Xiaoqing Jiang, and Huaiqiu Zhu. "IPEV: Identification of Prokaryotic and Eukaryotic Virus-Derived Sequences in Virome Using Deep Learning." GigaScience 13 (2024): giae018. https://doi.org/10.1093/gigascience/giae018.
+Hengchuang Yin, Shufang Wu, Jie Tan, Qian Guo, Mo Li, Jinyuan Guo, Yaqi Wang, Xiaoqing Jiang, and Huaiqiu Zhu. "IPEV: Identification of Prokaryotic and Eukaryotic Virus-Derived Sequences in Virome Using Deep Learning." GigaScience 13 (2024): giae018. https://doi.org/10.1093/gigascience/giae018.
 
 
 
