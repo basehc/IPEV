@@ -112,7 +112,7 @@ We provide two ways to use the IPEV tool: use repository from GitHub or use imag
 The IPEV program offers a specialized function for filtering out non-viral components from virome datasets. This feature is easily accessible and can be utilized with the following command:
 
 ```bash
-python3 run.py example.fasta -filter yes (default=no)
+python3 run.py example.fasta -filter yes (default: no)
 ```
 
 ## Quickstart
