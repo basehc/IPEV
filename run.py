@@ -359,7 +359,7 @@ if args.filter == 'yes':
 
                 x_.append(score[0])
                 start +=step
-            df = pd.DataFrame(results, columns=['Sequence_ID', 'Virus_Score', 'Virus_Score', 'Taxon'])
+            df = pd.DataFrame(results, columns=['Sequence_ID', 'Virus_Score', 'Non_Virus_Score', 'Taxon'])
             # Save the DataFrame to tsv file
             df.to_csv(f1, index=False, sep='\t')
             time_run = time.time() - start_time
@@ -372,17 +372,6 @@ if args.filter == 'yes':
     sys.exit()
 
 # If the filter argument is not 'yes', then continue with the existing program
-# ...
-
-# The rest of the program...
-
-
-
-
-
-
-
-
 
 start_time = time.time()
 t = time.localtime()
