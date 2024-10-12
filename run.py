@@ -353,7 +353,7 @@ if args.filter == 'yes':
                 if score[0]>score[1]:
                     name = 'Virus'
                 else:
-                    name = 'non-Virus'
+                    name = 'Non_Virus'
                 results.append([header, score[0], score[1], name])
                 num_seq_effective+=1
 
