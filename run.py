@@ -12,13 +12,10 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt 
 
 
-
-
 import argparse
-# Other necessary imports...
 
 # Create a parser
-parser = argparse.ArgumentParser(description="Your program description.")
+parser = argparse.ArgumentParser(description="IPEV")
 parser.add_argument('fasta_file', type=str, help='Path to the input FASTA file.')
 parser.add_argument('-filter', type=str, help='Filter option.', default='no')
 
